@@ -14,10 +14,8 @@ export class App extends Component {
     return (
       <Router>
         <div>
-          <Header />
           <Route path="/" component={Booking} />
           <Route path="/dashboard" component={Dashboard} />
-          <Footer />
         </div>
       </Router>
     )
