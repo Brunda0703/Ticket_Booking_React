@@ -102,7 +102,7 @@ export class Dashboard extends Component {
                         Object.entries(items).map(item => {
                             return item.map(result =>{
 
-                            if( result==='New_passangers' || result==='Old_passangers' || result==='booked' || result==='unbooked' ){
+                            if( result==='New_passengers' || result==='Old_passengers' || result==='booked' || result==='unbooked' ){
                                 return <h1>{result}</h1>
                             }
                             else{
