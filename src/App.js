@@ -1,6 +1,6 @@
 import React, {Component} from 'react'; // eslint-disable-next-lin
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route, Switch
   } from 'react-router-dom';
 import { Booking } from './components/Booking.js';
