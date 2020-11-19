@@ -1,5 +1,5 @@
 import React, {Component} from 'react'; // eslint-disable-next-lin
-import { BrowserRouter , Route , Switch } from 'react-router-dom';
+import { BrowserRouter , Route , Switch , browserHistory, IndexRoute } from 'react-router-dom';
 import { Booking } from './components/Booking.js';
 import { Dashboard } from './components/Dashboard.js';
 import './App.css';
@@ -10,13 +10,11 @@ export class App extends Component {
 
     return (
       <BrowserRouter>
-      <div className="App">
-          <Switch>
-          <Route exact path="/" component={Booking} />
-          <Route path="/dashboard" component={Dashboard} />
-          </Switch>
-    </div>
-        </BrowserRouter>
+          <Route path = "/" component = {Booking}>
+          <IndexRoute component = {Booking} />
+          <Route path="booking" component={Booking} />
+          <Route path="dashboard" component={Dashboard} />
+      </BrowserRouter>
     )
   }
 }
