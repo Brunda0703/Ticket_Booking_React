@@ -10,11 +10,9 @@ export class App extends Component {
 
     return (
       <BrowserRouter>
-          <Switch>
-            <Route path="/" component={Booking} />
-            <Route path="/" component={Dashboard} />
-          </Switch>
-        </BrowserRouter>
+          <Route path="/" component={Booking} />
+          <Route path="/dashboard" component={Dashboard} />
+      </BrowserRouter>
     )
   }
 }
