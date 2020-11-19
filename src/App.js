@@ -15,8 +15,8 @@ export class App extends Component {
       <Router>
         <div>
         <Switch>
+          <Route exact path="/" component={Booking} />
           <Route path="/dashboard" component={Dashboard} />
-          <Route path="/" component={Booking} />
         </Switch>
         </div>
       </Router>
