@@ -11,7 +11,7 @@ export class App extends Component {
     return (
       <BrowserRouter>
           <Switch>
-            <Route path="/" component={Booking} />
+            <Route path="/booking" component={Booking} />
             <Route path="/dashboard" component={Dashboard} />
           </Switch>
         </BrowserRouter>
