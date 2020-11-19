@@ -1,6 +1,6 @@
 import React, {Component} from 'react'; // eslint-disable-next-lin
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Route, Switch
   } from 'react-router-dom';
 import { Booking } from './components/Booking.js';
@@ -15,8 +15,8 @@ export class App extends Component {
       <Router>
         <div>
         <Switch>
-          <Route path="/" component={Booking} />
-          <Route path="/dashboard" component={Dashboard} />
+          <Route path="/dashboard" component={Booking} />
+          <Route path="/" component={Dashboard} />
         </Switch>
         </div>
       </Router>
